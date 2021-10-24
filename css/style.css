@@ -1,0 +1,154 @@
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: White;
+
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #000;
+}
+
+.text {
+  display: block;
+  text-align: center;
+}
+
+.topspace {
+  padding-top: 20px;
+}
+
+/** Background parts
+*/
+
+.bg_default {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../Images/BG.png");
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  filter: blur(2px);
+}
+
+.bg_default.bg_me {
+  background-image: url("https://lh6.googleusercontent.com/ydY6H5nIQh10Z4xCBvjUUCwdXA_mLzui-Dh3wl5RJ0zQFwL4zDQG0ZNab3rVtnhrFLqp49uO49AZOVoBHZfM258=w16383");
+}
+
+.bg_default.bg_projects {
+  background-image: url("https://lh5.googleusercontent.com/7fm5FC5w82OMvJLMOCxSyUiQYEuBnph2SnbH41aW4I5NXSRv0tCHTDbemkPLd8FTzKCzvgSlS3cSz7F3Y5X0UX8=w16383");
+}
+
+.title {
+  display: block;
+  line-height: 1.38;
+  font-size: 34.0pt;
+  text-align: center;
+
+  padding-top: 50px;
+}
+
+.title.light
+{
+  color: #FFF;
+}
+
+.title.title_subtitle {
+  line-height: 1;
+  font-size: 24pt;
+
+  padding-top: 10px;
+}
+
+.title.quote {
+  font-size: 16pt;
+
+}
+
+
+/** Button
+*/
+
+.buttons{
+  color: #404040;
+  line-height: 1.3;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  box-sizing: border-box;
+
+  outline: 0;
+  text-decoration: none;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  display: inline-block !important;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+  padding: 13px 35px 13px 35px;
+  margin: 10px;
+  border: none;
+  color: #FFF;
+	background: #1288b9;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	color: #000;
+	background: #4ebfed;
+}
+
+
+
+
+/** Headers
+*/
+
+.header_default {
+  display: table;
+  position: relative;
+  table-layout: fixed;
+
+  width: 100%;
+  height: 320px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.header_default.header_med {
+  height: 160px;
+}
+
+.header_default.header_small {
+  height: 80px;
+}
+
+.header_default.header_blank {
+  background-color: #111;
+}
+
+
+
+.holder {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
