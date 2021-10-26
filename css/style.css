@@ -130,6 +130,10 @@ body {
   margin: 0;
 }
 
+.header_default.header_lar {
+  height: 640px;
+}
+
 .header_default.header_med {
   height: 160px;
 }
@@ -151,4 +155,30 @@ body {
   width: 100%;
   overflow: hidden;
   position: absolute;
+}
+
+
+
+/** Lines
+*/
+
+.border {
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+    content: "";
+    width: 75%;
+    height: 2px;
+
+    transform: translate(0, -15px);
+
+    background: #EEE;
+    left: 12.5%;
+}
+
+.icon {
+  border-radius: 50%;
+
+  max-width: 100%;
+  height: auto;
 }
