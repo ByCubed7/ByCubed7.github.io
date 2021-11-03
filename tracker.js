@@ -11,7 +11,7 @@ function PrepScripts(callback) {
 function Update()
 {
     // A small 'tracker' I whipped up, just pings me a message to let me know how much
-    // trafic I'm getting on each page, helps me see how easy navigation is and what 
+    // trafic I'm getting on each page, helps me see how easy navigation is and what
     // pages aren't being used.
 
     // 'Security' to stop basic webcrawlers from just picking this up
@@ -38,7 +38,7 @@ function Update()
     const request = new XMLHttpRequest();
     request.open("POST", "https://discord.com/api/webhooks/905068408129871912/" + pass);
     request.setRequestHeader('Content-type', 'application/json');
-    //request.send(JSON.stringify(params));
+    request.send(JSON.stringify(params));
 }
 
 
