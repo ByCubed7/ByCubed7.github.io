@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-image: url("Images/BG.png");
+  background-image: url("img_cubes.png");
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   filter: blur(2px);
 }
