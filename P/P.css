@@ -105,7 +105,16 @@ body {
 
   transform: rotateX(45deg) rotateZ(45deg);
 
+  transition-duration: 0.125s;
+  transition-timing-function: ease-in;
+
   text-shadow: 5px 5px rgba(214, 221, 244, 0.4),
     10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
     20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.text:hover {
+  text-shadow: 7px 7px rgba(214, 221, 244, 0.4),
+    14px 14px rgba(214, 221, 244, 0.3), 21px 21px rgba(214, 221, 244, 0.2),
+    28px 28px rgba(214, 221, 244, 0.1), 35px 35px rgba(214, 221, 244, 0.05);
 }
