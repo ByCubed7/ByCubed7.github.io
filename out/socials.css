@@ -19,33 +19,61 @@ font-size: 1vw;
 
   justify-content: center;
 
-
   transform-origin: 50% 50%;
   transform: translate(0, 50vh);
 }
 
 .item {
   display: flex;
-  flex-grow: 0;
-
-  border-radius: 100%;
-
+  justify-content: center;
+  flex-grow: 1;
   order: 0;
 
-  width: 5vw;
-  height: 5vw;
+  width:      5vw;
+  max-width:  5vw;
+  height:     5vw;
+  max-height: 5vw;
 
   margin: 2vw;
+  padding: 1vw;
 
+
+  background-image: url("cards/base.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
   background-color: purple;
+  border-radius: 100%;
 
   transform-origin: 50% 50%;
   transform: translate(0, -55%);
-  transition: flex-grow 0.5s ease, height 1s ease, margin 1s ease, border-radius 0.3s ease;
+  transition:
+    height 1s ease,
+    max-height 1s ease,
+    width 1s ease,
+    max-width 1s ease,
+    margin 1s ease,
+    border-radius 0.3s ease,
+    background-position 0.3s ease,
+    padding 0.3s ease;
 }
 .item:hover {
-  flex-grow: 1;
-  height: 95vh;
+  width:      15vw;
+  max-width:  15vw;
+  height:     20vw;
+  max-height: 20vw;
+  margin: 0;
   border-radius: 10%;
+  background-position: center top;
+}
+
+.item .title {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
