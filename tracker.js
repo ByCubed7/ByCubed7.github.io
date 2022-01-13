@@ -18,14 +18,10 @@ function Update()
     var key = "U2FsdGVkX18/XGacgV1SWuz2CZFWebrIBH5AdxoEkMSbsEAohJWA07tOaA2xzRLS6+d2YuQP8u1aPpSP1m1XfZdY1uSThlwp340JaNzxlhAEn/QUqG4XXjrpS3LtMY2Z";
     var pass = CryptoJS.AES.decrypt(key, "Secret Passphrase").toString(CryptoJS.enc.Utf8);
 
-    // Page name
-    var page = window.location.href.split("ByCubed7.github.io")[1];
-    if (!page) page = "/";
-
     // Embed
     var myEmbed = {
         author: { name: "ByCubed7.github.io observation." },
-        title: "Page loaded: " + page,
+        title: window.location.href,
         //description: "",
         color: parseInt("#ff0000".replace("#", ""), 16)
     };
