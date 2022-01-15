@@ -12,7 +12,7 @@ function Update()
 {
     // A small 'tracker' I whipped up, just pings me a message to let me know how much
     // trafic I'm getting on each page, helps me see how easy navigation is and what
-    // pages aren't being used.
+    // pages aren't being used and also helps with dead link changing.
 
     // 'Security' to stop basic webcrawlers from just picking this up
     var key = "U2FsdGVkX18/XGacgV1SWuz2CZFWebrIBH5AdxoEkMSbsEAohJWA07tOaA2xzRLS6+d2YuQP8u1aPpSP1m1XfZdY1uSThlwp340JaNzxlhAEn/QUqG4XXjrpS3LtMY2Z";
