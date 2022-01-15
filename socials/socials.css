@@ -17,11 +17,16 @@ body {
     width: 100vw;
     height: 100vh;
 
-    filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400vw 400vh;
 
     animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .container {
@@ -54,6 +59,7 @@ body {
     padding: 1vw;
 
     image-rendering: pixelated;
+
     background-image: url("cards/base.png");
     background-repeat: no-repeat;
     background-size: 10vw;
@@ -112,11 +118,4 @@ body {
 a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
-}
-
-
-@keyframes gradient {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
