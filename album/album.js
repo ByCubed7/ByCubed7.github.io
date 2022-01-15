@@ -52,17 +52,16 @@ function addProjectsOnLoad() {
 	// Python Projects
 	album( "The Cybel Project");
 	album( "RPG Emulator");
-	album( "Face tracker");
-	album( "Music player");
 	album( "IRC");
 	album( "Config");
-	album( "RPG Profile Picture Generator");
-	album( "Project Reminder");
 	album( "Desktop Snake");
+	//album( "RPG Profile Picture Generator");
+	//album( "Project Reminder");
+	//album( "Face tracker");
+	//album( "Music player");
 
 	// Blender
 	album( "Weapons");
-
 
 
 
