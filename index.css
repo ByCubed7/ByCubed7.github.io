@@ -1,127 +1,61 @@
 
-body {
-  padding: 0;
-  margin: 0;
-
-  background-color: White;
-
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  color: #000;
+@font-face {
+  font-family: 'CompassGold';
+  src:  url('r/fonts/compass-gold-v1/CompassGold.ttf') format('truetype'),
+        url('r/fonts/compass-gold-v1/CompassGold.woff') format('woff'),
+        url('r/fonts/compass-gold-v1/CompassGold.otf') format('opentype');
 }
 
-.bg_default {
-  height: 100%;
-  width: 100%;
+@font-face {
+  font-family: 'HopeGold';
+  src:  url('r/fonts/hope-gold-v1/HopeGold.ttf') format('truetype'),
+        url('r/fonts/hope-gold-v1/HopeGold.woff') format('woff'),
+        url('r/fonts/hope-gold-v1/HopeGold.otf') format('opentype');
+}
 
-  position: relative;
-  overflow: hidden;
 
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-image: url("img_cubes.png");
+body {
+  padding: 10px 5% 0 5%;
+  margin: 0;
 
-  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  filter: blur(2px);
+  height:100vh;
+
+  background-image: url("r/Background Padding.png");
+  background-size: 100vw 4vw;
+  background-repeat: repeat-y;
+
+
+  image-rendering: pixelated;
+}
+
+.title {
+  text-align: center;
+  font-family: 'CompassGold';
+
+  font-size: 80px;
 }
 
 .menu {
-  background-color:purple;
-
-  clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
-  transition: all 0.3s ease-in-out;
-}
-
-.holderWrapper {
-  clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
-  transition: all 0.3s ease-in-out;
-}
-
-.holderWrapper:hover {
-  clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
-}
-
-.menuItemWrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color:purple;
-}
-
-.menuItem {
-  color: white;
-  background-color: grey;
-  border-style: ridge;
-  text-align: right;
-  padding: 40px;
-  font-size: 50px;
-  flex: 1;
-
-  transition: all 0.3s ease-in-out;
-}
-
-.menuItem:hover {
-	flex: 3;
-  background-color: rgb(80,80,80);
-}
-
-
-
-
-/** Headers
-*/
-
-.header_default {
-  display: table;
-  position: relative;
-  table-layout: fixed;
-
+  padding: 10px 5% 0 5%;
   width: 100%;
-  height: 320px;
-
-  padding: 0;
-  margin: 0;
-
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
-.header_default.header_lar {
-  height: 640px;
+.item {
+  text-align: center;
+  padding: 2px;
+  margin: 1% auto;
+  width: 200px;
+
+  font-family: 'HopeGold';
+  font-size: 30px;
+  color: black;
+
+  background-image: url("r/Button.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
-.header_default.header_med {
-  height: 160px;
-}
-
-.header_default.header_small {
-  height: 80px;
-}
-
-.header_default.header_blank {
-  background-color: #111;
-}
-
-
-
-.holder {
-  box-sizing: border-box;
-  font-size: 16px;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-}
-
-.holder.padded {
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-
-
-@keyframes fadeInAnimation {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+.item:hover {
+  text-decoration: none;
 }
