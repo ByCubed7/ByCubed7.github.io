@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'CompassGold';
+  src:  url('r/fonts/compass-gold-v1/CompassGold.ttf') format('truetype'),
+        url('r/fonts/compass-gold-v1/CompassGold.woff') format('woff'),
+        url('r/fonts/compass-gold-v1/CompassGold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HopeGold';
+  src:  url('r/fonts/hope-gold-v1/HopeGold.ttf') format('truetype'),
+        url('r/fonts/hope-gold-v1/HopeGold.woff') format('woff'),
+        url('r/fonts/hope-gold-v1/HopeGold.otf') format('opentype');
+}
+
 :root {
   --link-color:                 #13aff0;
   --link-color-darker:          #0c8ec4;
@@ -25,6 +39,6 @@
   --component-notify-bg:        #313131;
   --lightness-body-5:           #242424;
   --lightness-body-10:          #313131;
-  --font-family-primary:        'Open Sans', Helvetica, Arial, sans-serif;
-  --font-family-secondary:      'Open Sans', Helvetica, Arial, sans-serif;
+  --font-family-primary:        'CompassGold', Helvetica, Arial, sans-serif;
+  --font-family-secondary:      'HopeGold', Helvetica, Arial, sans-serif;
 }
