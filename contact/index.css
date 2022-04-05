@@ -14,7 +14,8 @@ body {
 
 .title {
   text-align: center;
-  font-family: 'CompassGold';
+	font-family: var(--font-family-title);
+  /*font-family: 'CompassGold';*/
 
   font-size: 100px;
 }
@@ -30,7 +31,8 @@ body {
   margin: 1% auto;
   width: 200px;
 
-  font-family: 'HopeGold';
+  font-family: var(--font-family-subtitle);
+  /*font-family: 'HopeGold';*/
   font-size: 30px;
   color: black;
 
