@@ -47,12 +47,17 @@
 
 </head>
 <body>
-  <h1 class="title">~ Send Me A Message ~</h1>
+  <h1 class="title">~ Send a Message ~</h1>
 
   <div class="menu">
     <div class="inputContainer">
-      Message: <input type="text" class="message"></input><br>
-      Author: <input type="text" class="author"></input>
+      <span class="text">Message:  </span>
+      <textarea  type="text" class="message"></textarea>
+      <div class="authorbox">
+        <span class="text">From:  </span>
+        <input type="text" class="author"></input>
+        <button class="send" name="send"> Send </button>
+      </div>
     </div>
   </div>
 

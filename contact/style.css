@@ -2,7 +2,7 @@ body {
   padding: 10px 5% 0 5%;
   margin: 0;
 
-  height:100vh;
+  height:100%;
 
   background-image: url("/r/Background Padding.png");
   background-size: 100vw 4vw;
@@ -22,7 +22,7 @@ body {
 
 .menu {
   padding: 10px 5% 0 5%;
-  width: 100%;
+  width: auto;
 }
 
 .item {
@@ -36,7 +36,7 @@ body {
   font-size: 30px;
   color: black;
 
-  background-image: url("r/Button.png");
+  background-image: url("/r/Button.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -45,4 +45,51 @@ body {
 .menu a:hover, a:visited, a:link, a:active
 {
   text-decoration: none;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  white-space: nowrap;
+}
+
+.text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.message {
+  flex-grow: 1;
+  width: 100%;
+  height: 25vh;
+  resize: vertical;
+}
+
+.authorbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  width: 100%;
+  height: 1.2em;
+  rows: 10;
+}
+
+.author {
+  flex-grow: 30;
+  height: 1.2em;
+}
+
+.send {
+  flex-grow: 5;
+
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+
+  height: 100%;
 }
