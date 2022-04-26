@@ -17,7 +17,7 @@ function SendMessage()
     // Embed
     var myEmbed = {
         author: { name: "ByCubed7.github.io observation." },
-        title: `A message from ${author} has been sent!`,
+        title: `A message from ${author}!`,
         description: message,
         color: parseInt("#3fa8ae".replace("#", ""), 16)
     };
