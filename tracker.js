@@ -1,7 +1,17 @@
 var cryptoJs;
 
 function PrepScripts(callback) {
+
+    var foundElement = document.getElementById("ScriptCryptoJs");
+
+    if (foundElement != null) {
+      cryptoJs = foundElement;
+      callback();
+      return;
+    }
+
     cryptoJs = document.createElement('script');
+    cryptoJs.setAttribute("id", "ScriptCryptoJs");
     cryptoJs.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js');
     document.head.appendChild(cryptoJs);
 

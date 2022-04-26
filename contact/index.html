@@ -34,8 +34,8 @@
 
   <!-- Twitter tags -->
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Cubies Socials!"/>
-  <meta name="twitter:text:title" content="Cubies Socials!"/>
+  <meta name="twitter:title" content="ByCubed7's Message Board!"/>
+  <meta name="twitter:text:title" content="Send a message to ByCubed7!"/>
   <meta name="twitter:site" content="@ByCubed7"/>
   <meta name="twitter:creator" content="@ByCubed7"/>
   <meta name="twitter:image" content="https://bycubed7.github.io/r/default.png"/>
@@ -44,6 +44,7 @@
 
   <!-- Scripts & Stylesheets -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
 </head>
 <body>
@@ -52,11 +53,11 @@
   <div class="menu">
     <div class="inputContainer">
       <span class="text">Message:  </span>
-      <textarea  type="text" class="message"></textarea>
+      <textarea id="message" type="text" class="message"></textarea>
       <div class="authorbox">
         <span class="text">From:  </span>
         <input type="text" class="author"></input>
-        <button class="send" name="send"> Send </button>
+        <button id="send" class="send" name="send"> Send </button>
       </div>
     </div>
   </div>
