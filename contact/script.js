@@ -19,7 +19,7 @@ function SendMessage()
         author: { name: "ByCubed7.github.io observation." },
         title: `A message from ${author} has been sent!`,
         description: message,
-        color: parseInt("#B10B1E".replace("#", ""), 16)
+        color: parseInt("#3fa8ae".replace("#", ""), 16)
     };
 
     const params = {
