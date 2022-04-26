@@ -21,7 +21,7 @@ body {
 
 .menu {
   padding: 10px 5% 0 5%;
-  width: 100%;
+  width: auto;
 }
 
 .item {
