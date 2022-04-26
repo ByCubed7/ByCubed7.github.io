@@ -126,7 +126,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .album-grid-item:hover .img-fluid {
-	transform: scale(1.2);
+	transform: scale(1.2) rotate(5deg);
 }
 
 body {
