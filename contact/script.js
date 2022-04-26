@@ -2,11 +2,13 @@
 function SendMessage()
 {
     // Get Message
-    var messageBox = document.getElementById("message");
+    var messageBox = document.getElementById('message');
+    if (messageBox == null) return;
     var message = messageBox.value;
 
-    var authorBox = document.getElementById("author");
-    var author = author.value;
+    var authorBox = document.getElementById('author');
+    if (authorBox == null) return;
+    var author = authorBox.value;
 
     // 'Security' to stop basic webcrawlers from just picking this up
     var key = "U2FsdGVkX18/XGacgV1SWuz2CZFWebrIBH5AdxoEkMSbsEAohJWA07tOaA2xzRLS6+d2YuQP8u1aPpSP1m1XfZdY1uSThlwp340JaNzxlhAEn/QUqG4XXjrpS3LtMY2Z";
@@ -30,6 +32,3 @@ function SendMessage()
     request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify(params));
 }
-
-var button = document.getElementById("send");
-button.onclick = SendMessage;
