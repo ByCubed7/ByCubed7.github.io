@@ -2,97 +2,211 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <!-- Content Settings -->
+  <meta name="author" content="ByCubed7"/>
+  <meta charset="utf-8"/>
+  <meta name="language" content="English">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="fav.ico"/>
 
-  <title></title>
+  <!-- Robots welcome :) -->
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="3 days">
 
-  <link rel="shortcut icon" href="images/fav.ico">
+  <!-- Default -->
+  <link rel="stylesheet" href="/theme.css">
+  <script src="/Cube.js"></script>
+  <meta name="theme-color" content="#24add0">
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="about.css">
+  <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Primary Meta Tags -->
+  <title>TITLE</title>
+  <meta name="title" content="TITLE">
+  <meta name="description" content="DESCRIPTION"/>
+  <meta name="keywords" content="Game Design, Art, Graphic Design, Bristol"/>
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="TITLE" />
+  <meta property="og:description" content="DESCRIPTION" />
+  <meta property="og:url" content="https://bycubed7.github.io/" />
+  <meta property="og:image" content="https://bycubed7.github.io/r/default.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter tags -->
+  <meta name="twitter:title" content="TITLE"/>
+  <meta name="twitter:text:title" content="DESCRIPTION"/>
+  <meta name="twitter:image" content="https://bycubed7.github.io/r/default.png"/>
+  <meta name="twitter:site" content="@ByCubed7"/>
+  <meta name="twitter:creator" content="@ByCubed7"/>
+  <meta name="twitter:card" content="summary"/>
+
+  <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+  <!-- Scripts & Stylesheets -->
+  <link rel="stylesheet" href="styles.css"/>
+  <!--script src="script.js"></script-->
+
 </head>
-
 <body>
 
     <!-- Top -->
-    <section class="header_default" id="top">
+    <section class="header" id="top">
         <div class="holder">
-            <div class="bg_default" style="background-image: url('../Images/BG.png');"></div>
+            <div class="bg_default"></div>
         </div>
         <div class="holder">
-            <div class="title light" style="padding-top: 50px;">Ethan Thomas</div>
-            <div class="title title_subtitle light">Student & System Engineer</div>
-            <div class="buttons">
-                <a href="" class="button">Who am I?</a>
-                <a href="" class="button">Projects</a>
-            </div>
+            <h1 class="title" style="padding-top: 20px;">Ethan Thomas</h1>
+            <div class="title subtitle">System Engineer & Student</div>
         </div>
     </section>
 
     <!-- Quote -->
-    <section class="header_default" style="height:250px;" id="me">
+    <section class="header" id="me">
         <div class="holder padded">
-            <div class="title quote" style="color: gray;">"Magic is real you fools it happens when you make other people laugh"<br>- Ethan</div>
-            <div class="text topspace">Hey! I'm Ethan, an aspiring game programmer based in Bristol. Here you can see some projects I've been working on throughout the years - rather that be for individual enjoyment or something to share.</div>
+            <div class="text quote" style="color: gray;" id="quote"></div>
+            <div class="text topspace" id="intro"></div>
 
         </div>
     </section>
 
-    <div class="border"></div>
+    <section class="header blur" style="height:75px;">
+        <div class="holder bg_default"></div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="header" style="height:50px; padding-top: 20px;">
+        <div class="holder">
+            <div class="text subtitle">About me</div>
+        </div>
+    </section>
+
+    <section class="header" style="height:400px;">
+        <div class="holder padded" style="display: flex;">
+        <div class="icon"><img></div>
+            <div class="text center text-left" style="flex: 1;">
+                <p id="about-me-1"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="header" style="height:400px;">
+        <div class="holder padded" style="display: flex;">
+            <div class="text center text-right" style="flex: 1;">
+                <p id="about-me-2"></p>
+            </div>
+            <div class="icon"><img></div>
+        </div>
+    </section>
+
+    <section class="header blur" style="height:75px;">
+        <div class="holder bg_default"></div>
+    </section>
+
+    <!-- Top 3 Projects -->
+    <section class="header" style="height:100px; padding-top: 20px;">
+        <div class="holder">
+            <div class="text subtitle">Top 3 Projects</div>
+        </div>
+    </section>
+
 
     <!-- Project -->
-    <section class="header_default header_lar" style="height:1000px;">
+    <section class="header" style="height:calc(100vw / 3 + 40px);">
         <div class="holder">
+            <div class="row" id="album">
 
-            <div class="element" style="display: flex; align-items: center; justify-content: center">
-                <div class="image" style="flex-basis: 10%; padding:5px;">
-                    <a href="">
-                        <img src="Images/Paper Rogue.png" class="icon"></img>
-                    </a>
+                <!-- Insert projects below here -->
+                <div class="col-4">
+                    <div class="item">
+                        <a href="..\P\PlasmaEngine\">
+                            <img class="img-fluid" project="PlasmaEngine" eval="e.src=p.card">
+                            <div class="item-overlay">
+                                <div class="item-overlay-inner">
+                                    <div class="item-name" project="PlasmaEngine" eval="e.textContent=p.displayname"></div>
+                                    <div class="item-description" project="PlasmaEngine" eval="e.textContent=p.description"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div style="padding-left: 5px; max-width: 500px;">
-                    <h3 class="text">Paper Rogue</h3>
-                    <p class="text lite">A 3D platformer rogue-lite prototype made using Unity 3D and Aseprite. Taking inspiration from Super Paper Mario's 2.5D stylization</p>
+                <div class="col-4">
+                    <div class="item">
+                        <a href="..\P\PlasmaEngine\">
+                            <img class="img-fluid" project="PaperRogue" eval="e.src=p.card">
+                            <div class="item-overlay">
+                                <div class="item-overlay-inner">
+                                    <div class="item-name" project="PaperRogue" eval="e.textContent=p.displayname"></div>
+                                    <div class="item-description" project="PaperRogue" eval="e.textContent=p.description"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a href="..\P\PlasmaEngine\">
+                            <img class="img-fluid" project="RPGEmulator" eval="e.src=p.card">
+                            <div class="item-overlay">
+                                <div class="item-overlay-inner">
+                                    <div class="item-name" project="RPGEmulator" eval="e.textContent=p.displayname"></div>
+                                    <div class="item-description" project="RPGEmulator" eval="e.textContent=p.description"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Insert projects above here -->
+
+
             </div>
 
-            <div class="element" style="display: flex; align-items: center; justify-content: center">
-                <div class="image" style="flex-basis: 10%; padding:5px;">
-                    <a href="">
-                        <img src="https://via.placeholder.com/800" class="icon"></img>
-                    </a>
-                </div>
-                <div style="padding-left: 5px; max-width: 500px;">
-                    <h3 class="text">Title</h3>
-                    <p class="text lite">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
-                </div>
-            </div>
-
-            <div class="element" style="display: flex; align-items: center; justify-content: center">
-                <div class="image" style="flex-basis: 10%; padding:5px;">
-                    <a href="">
-                        <img src="https://via.placeholder.com/800" class="icon"></img>
-                    </a>
-                </div>
-                <div style="padding-left: 5px; max-width: 500px;">
-                    <h3 class="text">Title</h3>
-                    <p class="text lite">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
-                </div>
-            </div>
 
         </div>
     </section>
 
     <!-- Break -->
-    <section class="header_default header_small header_blank">
+    <section class="header blur" style="height:75px;">
+        <div class="holder bg_default"></div>
+    </section>
+
+    <section class="header" style="height:50px;">
         <div class="holder">
-            <div class="bg_default"></div>
+            <div class="text subtitle center-vertical">Contact me</div>
         </div>
+    </section>
+
+    <section class="header " style="height:450px;">
+        <div class="holder padded" style="display: flex;">
+            <div class="icon contact-icon-parent">
+                <a href="https://discord.gg/hQvvMGwJTG" target="_blank"><div class="contact-icon" style="clip-path: polygon(0    0, 25%  0, 0    100%, 0   100%);"><img src="icons/icon1.png"></div></a>
+                <a href="https://twitter.com/ByCubed7" target="_blank"><div class="contact-icon" style="clip-path: polygon(25%  0, 50%  0, 25%  100%, 0   100%);"><img src="icons/icon2.png"></div></a>
+                <a href="https://twitch.tv/ByCubed7" target="_blank"><div class="contact-icon" style="clip-path: polygon(50%  0, 75% 0,  50%  100%, 25% 100%);"><img src="icons/icon3.png"></div></a>
+                <a href="https://github.com/ByCubed7" target="_blank"><div class="contact-icon" style="clip-path: polygon(75%  0, 100% 0, 75%  100%, 50% 100%);"><img src="icons/icon4.png"></div></a>
+                <a href="https://bycubed7.itch.io/" target="_blank"><div class="contact-icon" style="clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);"><img src="icons/icon5.png"></div></a>
+                <div class="contact-icon" style="pointer-events: none;"><img src="icons/icon6.png"></div>
+            </div>
+            <div class="icon contact-icon-parent">
+                <a href="https://discord.gg/hQvvMGwJTG" target="_blank"><div class="contact-icon"><img src="icons/icon1.png"></div></a>
+                <div class="contact-icon" style="pointer-events: none;"><img src="icons/icon6.png"></div>
+            </div>
+            <div class="icon contact-icon-parent">
+                <a href="https://twitter.com/ByCubed7" target="_blank"><div class="contact-icon"><img src="icons/icon2.png"></div></a>
+                <div class="contact-icon" style="pointer-events: none;"><img src="icons/icon6.png"></div>
+            </div>
+            <div class="icon contact-icon-parent">
+                <a href="mailto:ByCubed7@gmail.com"><div class="contact-icon"><img src="icons/icon7.png"></div></a>
+                <div class="contact-icon" style="pointer-events: none;"><img src="icons/icon6.png"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Break -->
+    <section class="header blur" style="height:200px;">
         <div class="holder">
-            <div class="title"></div>
+            <div class="bg_default">I broke like 7 other pages doing this</div>
         </div>
     </section>
 
@@ -108,17 +222,5 @@
     </section>
     -->
 
-    <section class="header_default header_lar">
-        <div class="holder">
-            <div class="title"><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="dark" data-type="VERTICAL" data-vanity="ethan-thomas-e7" data-version="v1"></div></div>
-        </div>
-    </section>
-
-
-    <a href="docs/menu.html">EEEEEEE</a>
-
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
 </body>
-
 </html>

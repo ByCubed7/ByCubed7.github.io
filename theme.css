@@ -12,35 +12,72 @@
         url('r/fonts/hope-gold-v1/HopeGold.otf') format('opentype');
 }
 
+@keyframes kf_fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
 :root {
-  --link-color:                 #13aff0;
-  --link-color-darker:          #0c8ec4;
-  --border-color:               #383838;
-  --border-color-lighter:       #454545;
-  --subtitle-color:             #f1f1f1;
-  --site-title-color:           #ffffff;
-  --site-title-color-darkest:   #cccccc;
-  --page-title-color:           #fff;
-  --body-bg:                    #171717;
-  --body-bg-rgb:                23, 23, 23;
-  --body-bg-lighter:            #313131;
-  --body-bg-darker:             #0a0a0a;
-  --body-bg-darkest:            black;
-  --body-color:                 #bbbbbb;
-  --body-color-rgb:             187, 187, 187;
-  --body-color-darkest:         #888888;
-  --header-bg:                  #000000;
-  --header-bg-rgb:              0, 0, 0;
-  --header-bg-darker:           black;
-  --nav-album-bg:               #222222;
-  --footer-bg:                  #222222;
-  --footer-text-color:          #bbbbbb;
-  --lib-perfect-scrollbar-bg:   #454545;
-  --component-notify-bg:        #313131;
-  --lightness-body-5:           #242424;
-  --lightness-body-10:          #313131;
-  --font-family-title:          'CompassGold', Helvetica, Arial, sans-serif;
-  --font-family-subtitle:       'HopeGold', Helvetica, Arial, sans-serif;
-  --font-family-primary:        'Open Sans', Helvetica, Arial, sans-serif;
-  --font-family-secondary:      'Open Sans', Helvetica, Arial, sans-serif;
+    --font-family-title:          'CompassGold', Helvetica, Arial, sans-serif;
+    --font-family-subtitle:       'HopeGold', Helvetica, Arial, sans-serif;
+    --font-family-primary:        'Open Sans', Helvetica, Arial, sans-serif;
+    --font-family-secondary:      'Open Sans', Helvetica, Arial, sans-serif;
+
+    --link-color:                 #13aff0;
+    --link-color-darker:          #0c8ec4;
+
+    --border-color:               #383838;
+    --border-color-lighter:       #454545;
+
+    --subtitle-color:           #f1f1f1;
+    --title-color:              #ffffff;
+    --title-color-darkest:      #cccccc;
+    --page-title-color:           #fff;
+    --body-bg:                    #171717;
+    --body-bg-rgb:                23, 23, 23;
+    --body-bg-lighter:            #313131;
+    --body-bg-darker:             #0a0a0a;
+    --body-bg-darkest:            black;
+    --body-color:                 #bbbbbb;
+    --body-color-rgb:             187, 187, 187;
+    --body-color-darkest:         #888888;
+    --header-bg:                  #000000;
+    --header-bg-rgb:              0, 0, 0;
+    --header-bg-darker:           black;
+    --nav-album-bg:               #222222;
+    --footer-bg:                  #222222;
+    --footer-text-color:          #bbbbbb;
+    --lib-perfect-scrollbar-bg:   #454545;
+    --component-notify-bg:        #313131;
+    --lightness-body-5:           #242424;
+    --lightness-body-10:          #313131;
+}
+
+h1 {
+	font-family: var(--font-family-title);
+}
+
+h2, h3, h4, h5, h6, .title-font {
+	font-family: var(--font-family-secondary);
+}
+
+/*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+.blur {
+    filter: blur(4px);
+}
+
+.padded {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hidden {
+	display: none !important
+}
+
+.center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

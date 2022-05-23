@@ -14,7 +14,7 @@ body {
   background-color: #18222d;
   overflow: hidden;
 
-  animation: fadeInAnimation ease 3s;
+  animation: kf_fadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -122,10 +122,4 @@ body {
   text-shadow: 7px 7px rgba(214, 221, 244, 0.4),
     14px 14px rgba(214, 221, 244, 0.3), 21px 21px rgba(214, 221, 244, 0.2),
     28px 28px rgba(214, 221, 244, 0.1), 35px 35px rgba(214, 221, 244, 0.05);
-}
-
-
-@keyframes fadeInAnimation {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
 }
