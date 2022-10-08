@@ -15,7 +15,7 @@ body {
   background-color: var(--body-bg);
   color: var(--body-color);
 
-  background-image: url("Background Padding.png");
+  background-image: url("cubes.png");
   background-size: 100vw 4vw;
   background-repeat: repeat-y;
   image-rendering: pixelated;
@@ -69,7 +69,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-image: url("/r/img_cubes.png");
+  background-image: url("cubes.png");
   box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 

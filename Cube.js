@@ -98,102 +98,9 @@ function projectParse(project, element, obj) {
 
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-class Project {
-    static All = [];
-
-    static getByName(name) {
-        for (var i = 0; i < Project.All.length; i++) {
-            if (Project.All[i].name == name)
-                return Project.All[i];
-        }
-        return null;
-    }
-
-    #done;
-
-    constructor(name) {
-        this.name = name;
-        this.displayname = name;
-        this.description = "No Description Provided!";
-        this.url = `\\P\\${this.name}`;
-        this.card = `${this.url}\\card.png`;
-        this.dateStarted = new Date();
-        // Finished at?
-        // Still going?
-
-        // Resources used
-        this.resources = [];
-
-        // Estimated time spent
-
-        this.done = false;
-    }
-
-    setDisplayname(newDisplayname) {
-        this.displayname = newDisplayname;
-        return this;
-    }
-
-    setDescription(newDescription) {
-        this.description = newDescription;
-        return this;
-    }
-
-    setDateStarted(newDate) {
-        this.dateStarted = newDate;
-        return this;
-    }
-
-    addResources() {
-        for (var i = 0; i < arguments.length; i++)
-            this.resources.push(arguments[i]);
-        return this;
-    }
-
-    finish() {
-        if (this.done) return;
-        this.done = true;
-
-        Project.All.push(this);
-    }
-}
-
-
-// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
 const device = GetDevice();
 
-
 LoadScript("CryptoJs", "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js", () => {})
-
-//window.onresize = ;
-
-// Load different CSS depending on device type / size
-
-
-// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-
-// Load Projects
-
-new Project("PaperRogue")
-    .setDisplayname("Paper Rogue")
-    .setDescription("A Stylistic Platformer Prototype.")
-    .addResources("Unreal", "Unity", "Aseprite", "C#")
-    .finish();
-
-new Project("PlasmaEngine")
-    .setDisplayname("Plasma")
-    .setDescription("An object and component oriented game engine API focused on 2D games. Deals with rendering sprites and text, physics, controller inputs, shader compiling and window control.")
-    .addResources("Visual Studio", "C++", "OpenGL", "Aseprite")
-    .finish();
-
-new Project("RPGEmulator")
-    .setDisplayname("RPGE")
-    .setDescription("A text RPG game made purely as library to be used in other creative projects.")
-    .addResources("Python", "Github", "D&D")
-    .finish();
 
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 // Dates and such
@@ -228,19 +135,4 @@ window.onload = (event) => {
     fillPossibleElementWithText("intro", intro);
     fillPossibleElementWithText("about-me-1", aboutme1);
     fillPossibleElementWithText("about-me-2", aboutme2);
-
-    // Evaluate evals
-
-
-    elements = document.querySelectorAll("[project][eval]")
-    for (var i = 0; i < elements.length; i++) {
-        var element = elements[i];
-        console.log(element);
-
-        var project = Project.getByName(element.attributes.project.nodeValue);
-        var eval = element.attributes.eval.nodeValue;
-
-        element.textContent = projectParse(project, element, eval);
-    }
-
 };
