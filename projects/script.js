@@ -40,14 +40,14 @@ function album (name, repo) {
 function addProjectsOnLoad() {
 
 	// C++
-	album( "Plasma Engine", "Plasma");
+	album( "Plasma Engine", "../Plasma");
 
 	// JAVA
 	//album( "MMOnTAB");
 
 	// Unity & Unreal 4
-	album( "Paper Rogue", "PaperRogue");
-	album( "Wizard Rogue", "WizardRogue");
+	album( "Paper Rogue", "../PaperRogue");
+	album( "Wizard Rogue", "../WizardRogue");
 	album( "NodeNetwork");
 
 	// Python Projects
