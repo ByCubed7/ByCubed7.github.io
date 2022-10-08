@@ -1,6 +1,7 @@
-function album (name) {
+function album (name, repo) {
 
-	link = ".." + "\\" + "P" + "\\" + name.replace(/\s/g, '') + "\\";
+	//link = ".." + "\\" + "projects" + "\\" + name.replace(/\s/g, '').toLowerCase() + "\\";
+	link = repo + "\\";
 	card = link + "card";
 
 	console.log(link);
@@ -39,14 +40,14 @@ function album (name) {
 function addProjectsOnLoad() {
 
 	// C++
-	album( "Plasma Engine", "", "PlasmaEngine");
+	album( "Plasma Engine", "Plasma");
 
 	// JAVA
 	//album( "MMOnTAB");
 
 	// Unity & Unreal 4
-	album( "Paper Rogue");
-	album( "Wizard Rogue");
+	album( "Paper Rogue", "PaperRogue");
+	album( "Wizard Rogue", "WizardRogue");
 	album( "NodeNetwork");
 
 	// Python Projects
@@ -62,18 +63,6 @@ function addProjectsOnLoad() {
 
 	// Blender
 	album( "Weapons");
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
