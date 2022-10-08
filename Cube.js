@@ -78,6 +78,7 @@ function LoadCSS() {
 
 function fillPossibleElementWithText(elementId, text) {
     let element = document.getElementById(elementId);
+    if (element == null) return;
     element.innerHTML = text;
 }
 
