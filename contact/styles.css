@@ -34,7 +34,7 @@ body {
   font-family: var(--font-family-subtitle);
   /*font-family: 'HopeGold';*/
   font-size: 30px;
-  color: black;
+  color: var(--subtitle-color);
 
   background-image: url("/r/Button.png");
   background-size: 100% 100%;
@@ -69,6 +69,8 @@ body {
   height: 25vh;
   resize: vertical;
   border-radius: 10px;
+  color: var(--subtitle-color);
+  background-color: var(--body-color-darkest);
 }
 
 .authorbox {
