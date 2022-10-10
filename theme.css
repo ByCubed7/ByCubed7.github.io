@@ -55,13 +55,29 @@
     --lightness-body-10:          #313131;
 }
 
+body {
+  margin: 0;
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  image-rendering: pixelated;
+}
+
 h1 {
 	font-family: var(--font-family-title);
+    color: var(--title-color);
 }
 
 h2, h3, h4, h5, h6, .title-font {
 	font-family: var(--font-family-secondary);
+	color: var(--title-color-darker);
 }
+
+a:hover, a:visited, a:link, a:active
+{
+	color: var(--title-color);
+    text-decoration: none;
+}
+
 
 /*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
@@ -82,4 +98,21 @@ h2, h3, h4, h5, h6, .title-font {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+
+.text-left {
+	text-align: left
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-right {
+	text-align: right
+}
+
+.vertical-middle {
+	vertical-align: middle
 }

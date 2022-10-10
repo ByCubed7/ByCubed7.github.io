@@ -2,35 +2,6 @@ html {
 	line-height: 1.15;
 }
 
-body {
-	margin: 0
-}
-
-a:hover, a:visited, a:link, a:active
-{
-	color: var(--site-title-color);
-    text-decoration: none;
-}
-
-.text-left {
-	text-align: left
-}
-
-.text-center {
-	text-align: center
-}
-
-.text-right {
-	text-align: right
-}
-
-.vertical-middle {
-	vertical-align: middle
-}
-
-.hidden {
-	display: none !important
-}
 
 @media(max-width:47.9375em) {
 	.hidden-phone {
@@ -134,14 +105,6 @@ body {
   padding: 17px 20px 19px;
 }
 
-.text-center {
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6, .title-font {
-	font-family: var(--font-family-secondary)
-}
-
 
 /* - - - - */
 
@@ -169,8 +132,6 @@ h1, h2, h3, h4, h5, h6, .title-font {
 body {
 	font-size: .875rem;
 	line-height: 1.75;
-	background-color: var(--body-bg);
-	color: var(--body-color)
 }
 
 .site-wrapper {
