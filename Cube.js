@@ -107,6 +107,10 @@ LoadScript("CryptoJs", "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/r
 // Dates and such
 
 const startedProgramming = new Date(2012, 9, 17);
+const startedHighschool = new Date(2014, 9, 15);
+const startedCollege = new Date(2019, 9, 26);
+const startedUni = new Date(2021, 9, 26);
+
 let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming) / 1000 / 60 / 60 / 24 / 365);
 
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
