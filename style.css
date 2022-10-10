@@ -32,15 +32,10 @@ body {
 
   font-family: var(--font-family-subtitle);
   font-size: 30px;
-  color: black;
+  color: var(--subtitle-color);
 
   background-image: url("r/Button.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 5px;
-}
-
-.menu a:hover, a:visited, a:link, a:active
-{
-  text-decoration: none;
 }
