@@ -4,9 +4,9 @@ body {
 
   line-height: 1.75;
   font-family: var(--font-family-primary);
-  background-color: var(--body-bg);
-  color: var(--body-color);
 
+  background-image: url("cubes.png");
+  background-size: auto 100vw;
 }
 
 .text {
@@ -47,11 +47,11 @@ body {
 /** Background parts
 */
 
-.bg_default {
+.background {
   height: 100%;
   width: 100%;
 
-  position: relative;
+  position: fixed;
   overflow: hidden;
 
   background-size: cover;
@@ -88,27 +88,6 @@ body {
 .gap {
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.text-left {
-	text-align: left
-}
-
-.text-center {
-	text-align: center
-}
-
-.text-right {
-	text-align: right
-}
-
-.vertical-middle {
-	vertical-align: middle
-}
-
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
 }
 
 
