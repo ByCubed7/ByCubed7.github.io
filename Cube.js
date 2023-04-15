@@ -101,43 +101,19 @@ function projectParse(project, element, obj) {
 
 const device = GetDevice();
 
-LoadScript("CryptoJs", "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js", () => {})
+// Content blocking won't allow this
+//LoadScript("CryptoJs", "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js", () => {})
 
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 // Dates and such
 
 const startedProgramming = new Date(2012, 9, 17);
-const startedHighschool = new Date(2014, 9, 15);
-const startedCollege = new Date(2019, 9, 26);
-const startedUni = new Date(2021, 9, 26);
+const startedHighschool  = new Date(2014, 9, 15);
+const startedCollege     = new Date(2019, 9, 26);
+const startedUni         = new Date(2021, 9, 26);
 
 let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming) / 1000 / 60 / 60 / 24 / 365);
 
-// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-const quote = `
-"Magic is real you fools, it happens when you make other people laugh"<br>- Ethan<br><br>
-`
-
-const intro = `
-Hey! I'm Ethan, an aspiring game programmer based in the UK. Here you can see some projects I've been working on throughout the years - rather that be for individual enjoyment or something to share.
-`
-
-const aboutme1 = `
-Over the past ${startedProgrammingYearsElapsed} years, I have self-taught myself in a variety of programming languages and theories, such as C++, C#, Python and Java; As well as trying out and following many programming principles, design structures, libraries and interfaces! I have used this knowledge to develop a series of projects from applications, programs and games for a variety of my friends and community.
-<br><br>
-All in all, I enjoy building upon my current knowledge and learning both in and outside of programming! - for example rigging and animation in Blender, and once I feel competent in a particular subject I have a fondness to merge and experement it with something else, such as my Blender face rig and my Python facial tracking program.
-`;
-const aboutme2 = `
-Wishing to focus on one thing, but inevitably finds themselfs programming snake in Brainfuck, Playing Minecraft from a discord bot or some other ridiculous project! My personal project consistancy is in shambles, always having the hyperfocus on one project to the next.
-
-
-`;
-
-
 window.onload = (event) => {
-    // Upload page info
-    fillPossibleElementWithText("quote", quote);
-    fillPossibleElementWithText("intro", intro);
-    fillPossibleElementWithText("about-me-1", aboutme1);
-    fillPossibleElementWithText("about-me-2", aboutme2);
+    getElementById("startedProgrammingYearsElapsed").innerHTML = startedProgrammingYearsElapsed;
 };
