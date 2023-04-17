@@ -78,6 +78,10 @@ body {
     background-color: var(--body-bg-darker) !important;
 }
 
+.background-lighter {
+    background-color: var(--body-bg-lighter) !important;
+}
+
 h1 {
     font-family: var(--font-family-title);
     color: var(--title-color);
