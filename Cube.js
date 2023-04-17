@@ -115,5 +115,27 @@ const startedUni         = new Date(2021, 9, 26);
 let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming) / 1000 / 60 / 60 / 24 / 365);
 
 window.onload = (event) => {
-    getElementById("startedProgrammingYearsElapsed").innerHTML = startedProgrammingYearsElapsed;
+    document.getElementById("startedProgrammingYearsElapsed").innerHTML = startedProgrammingYearsElapsed;
 };
+
+// Ready each code display correctly and highlightjs them
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    if (typeof hljs !== 'object') return;
+
+    // TODO: Find smallest indent on each element before subtraction
+
+    document.querySelectorAll('pre code').forEach((el) => {
+        var newContent = "";
+        el.textContent.split('\n').forEach((line) => {
+            // Unindent each line 6 times.
+            newContent += line.replace("    ".repeat(6), "") + '\n';
+            //i = 6; while(i > 0) { line = line.replace("    ", ""); i--; }
+            //newContent += line + '\n';
+        });
+        //newContent = newContent.replaceAll("<", "&lt;");
+
+        el.textContent = newContent.trim();
+        hljs.highlightElement(el);
+    });
+});
