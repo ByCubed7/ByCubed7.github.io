@@ -71,8 +71,11 @@ body {
 }
 
 .background {
-    color: var(--body-color);
     background-color: var(--body-bg) !important;
+}
+
+.background-darker {
+    background-color: var(--body-bg-darker) !important;
 }
 
 h1 {
