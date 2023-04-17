@@ -38,6 +38,7 @@
     --title-color: #ffffff;
     --title-color-darkest: #cccccc;
     --subtitle-color: #f1f1f1;
+    --highlight-color: #ffffff;
     /**/
 
     --main-light: #e180ff;
@@ -66,7 +67,7 @@ body {
     margin: 0;
     color: var(--body-color);
     background-color: var(--body-bg);
-    image-rendering: pixelated;
+    /*image-rendering: pixelated;*/
 }
 
 h1 {
