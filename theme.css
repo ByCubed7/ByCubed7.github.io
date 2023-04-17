@@ -1,80 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 @font-face {
-  font-family: 'CompassGold';
-  src:  url('fonts/compass-gold-v1/CompassGold.ttf') format('truetype'),
-        url('fonts/compass-gold-v1/CompassGold.woff') format('woff'),
-        url('fonts/compass-gold-v1/CompassGold.otf') format('opentype');
+    font-family: 'CompassGold';
+    src: url('fonts/compass-gold-v1/CompassGold.ttf') format('truetype'), url('fonts/compass-gold-v1/CompassGold.woff') format('woff'), url('fonts/compass-gold-v1/CompassGold.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'HopeGold';
-  src:  url('fonts/hope-gold-v1/HopeGold.ttf') format('truetype'),
-        url('fonts/hope-gold-v1/HopeGold.woff') format('woff'),
-        url('fonts/hope-gold-v1/HopeGold.otf') format('opentype');
+    font-family: 'HopeGold';
+    src: url('fonts/hope-gold-v1/HopeGold.ttf') format('truetype'), url('fonts/hope-gold-v1/HopeGold.woff') format('woff'), url('fonts/hope-gold-v1/HopeGold.otf') format('opentype');
 }
 
 @keyframes kf_fadeIn {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 :root {
-    --font-family-title:          'CompassGold', Helvetica, Arial, sans-serif;
-    --font-family-subtitle:       'HopeGold', Helvetica, Arial, sans-serif;
-    --font-family-primary:        'Poppins', 'Open Sans', Helvetica, Arial, sans-serif;
-    --font-family-secondary:      'Poppins', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-family-title: "Lato", sans-serif;
+    --font-family-subtitle: 'HopeGold', Helvetica, Arial, sans-serif;
+    --font-family-primary: 'Poppins', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-family-secondary: 'Poppins', 'Open Sans', Helvetica, Arial, sans-serif;
+    /**/
 
-    --link-color:                 #13aff0;
-    --link-color-darker:          #0c8ec4;
+    --link-color: #13aff0;
+    --link-color-darker: #0c8ec4;
+    /**/
 
-    --border-color:               #383838;
-    --border-color-lighter:       #454545;
+    --border-color: #383838;
+    --border-color-lighter: #454545;
+    /**/
 
-    --subtitle-color:           #f1f1f1;
-    --title-color:              #ffffff;
-    --title-color-darkest:      #cccccc;
-    --page-title-color:           #fff;
-    --body-bg:                    #171717;
-    --body-bg-rgb:                23, 23, 23;
-    --body-bg-lighter:            #313131;
-    --body-bg-darker:             #0a0a0a;
-    --body-bg-darkest:            black;
-    --body-color:                 #bbbbbb;
-    --body-color-rgb:             187, 187, 187;
-    --body-color-darkest:         #888888;
-    --header-bg:                  #000000;
-    --header-bg-rgb:              0, 0, 0;
-    --header-bg-darker:           black;
-    --nav-album-bg:               #222222;
-    --footer-bg:                  #222222;
-    --footer-text-color:          #bbbbbb;
-    --lib-perfect-scrollbar-bg:   #454545;
-    --component-notify-bg:        #313131;
-    --lightness-body-5:           #242424;
-    --lightness-body-10:          #313131;
+    --title-color: #ffffff;
+    --title-color-darkest: #cccccc;
+    --subtitle-color: #f1f1f1;
+    /**/
+
+    --main-light: #e180ff;
+    --main-med: #b667ff;
+    --main-dark: #7341a5;
+    /**/
+
+    --body-bg: #171717;
+    --body-bg-rgb: 23, 23, 23;
+    --body-bg-lighter: #313131;
+    --body-bg-darker: #0a0a0a;
+    --body-bg-darkest: black;
+    /**/
+
+    --body-color: #bbbbbb;
+    --body-color-rgb: 187, 187, 187;
+    --body-color-darkest: #888888;
+    /**/
+
+    --header-bg: #000000;
+    --header-bg-rgb: 0, 0, 0;
+    --header-bg-darker: black;
 }
 
 body {
-  margin: 0;
-  color: var(--body-color);
-  background-color: var(--body-bg);
-  image-rendering: pixelated;
+    margin: 0;
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    image-rendering: pixelated;
 }
 
 h1 {
-	font-family: var(--font-family-title);
+    font-family: var(--font-family-title);
     color: var(--title-color);
 }
 
 h2, h3, h4, h5, h6, .title-font {
-	font-family: var(--font-family-secondary);
-	color: var(--title-color-darker);
+    font-family: var(--font-family-secondary);
+    color: var(--title-color-darker);
 }
 
-a:hover, a:visited, a:link, a:active
-{
-	color: var(--title-color);
+a:hover, a:visited, a:link, a:active {
+    color: var(--title-color);
     text-decoration: none;
 }
 
@@ -91,28 +97,28 @@ a:hover, a:visited, a:link, a:active
 }
 
 .hidden {
-	display: none !important
+    display: none !important
 }
 
 .center {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
 .text-left {
-	text-align: left
+    text-align: left
 }
 
 .text-center {
-	text-align: center
+    text-align: center
 }
 
 .text-right {
-	text-align: right
+    text-align: right
 }
 
 .vertical-middle {
-	vertical-align: middle
+    vertical-align: middle
 }
