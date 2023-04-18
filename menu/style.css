@@ -1,15 +1,14 @@
 body {
-  padding: 10px 5% 0 5%;
-  margin: 0;
+    padding: 10px 5% 0 5%;
+    margin: 0;
+    height: 100vh;
+    background-image: url("padding.png");
+    background-size: 100vw 4vw;
+    background-repeat: repeat-y;
 
-  height:100vh;
+    image-rendering: pixelated;
 
-  background-image: url("r/Background Padding.png");
-  background-size: 100vw 4vw;
-  background-repeat: repeat-y;
-
-
-  image-rendering: pixelated;
+    overflow: hidden;
 }
 
 .title {
