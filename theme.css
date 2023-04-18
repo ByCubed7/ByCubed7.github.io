@@ -10,16 +10,6 @@
     src: url('fonts/hope-gold-v1/HopeGold.ttf') format('truetype'), url('fonts/hope-gold-v1/HopeGold.woff') format('woff'), url('fonts/hope-gold-v1/HopeGold.otf') format('opentype');
 }
 
-@keyframes kf_fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 :root {
     --font-family-title: "Lato", sans-serif;
     --font-family-subtitle: 'HopeGold', Helvetica, Arial, sans-serif;
@@ -66,8 +56,6 @@
 body {
     margin: 0;
     color: var(--body-color);
-    background-color: var(--body-bg);
-    /*image-rendering: pixelated;*/
 }
 
 .background {
