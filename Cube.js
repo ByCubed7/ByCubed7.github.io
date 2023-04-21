@@ -115,7 +115,7 @@ const startedUni         = new Date(2021, 9, 26);
 let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming) / 1000 / 60 / 60 / 24 / 365);
 
 window.onload = (event) => {
-    document.getElementById("startedProgrammingYearsElapsed").querySelectorAll('pre code').forEach((el) => {
+    document.querySelectorAll('startedProgrammingYearsElapsed').forEach((el) => {
         el.innerHTML = startedProgrammingYearsElapsed;
     }
 };
