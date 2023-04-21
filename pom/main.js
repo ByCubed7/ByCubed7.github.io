@@ -1,5 +1,5 @@
 
-const started = new Date(2019, 9, 26, 0, 0, 0, 0);
+const started = new Date(2018, 9, 26, 0, 0, 0, 0);
 
 window.onload = function () { update(); window.setInterval(update, 10); };
 

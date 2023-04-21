@@ -109,7 +109,8 @@ const device = GetDevice();
 
 const startedProgramming = new Date(2012, 9, 17);
 const startedHighschool  = new Date(2014, 9, 15);
-const startedCollege     = new Date(2019, 9, 26);
+const startedCollege     = new Date(2018, 9, 26); // Ended 24th July 2020 ish
+const startedCollegeExtended = new Date(2020, 9, 26); // Ended 3rd Augest 2021 ish
 const startedUni         = new Date(2021, 9, 26);
 
 let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming) / 1000 / 60 / 60 / 24 / 365);
