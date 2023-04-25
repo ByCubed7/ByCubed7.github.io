@@ -118,7 +118,7 @@ let startedProgrammingYearsElapsed = Math.round((Date.now() - startedProgramming
 window.onload = (event) => {
     document.querySelectorAll('startedProgrammingYearsElapsed').forEach((el) => {
         el.innerHTML = startedProgrammingYearsElapsed;
-    }
+    });
 };
 
 // Ready each code display correctly and highlightjs them
