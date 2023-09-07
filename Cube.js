@@ -22,7 +22,7 @@ function SendMessage(title, msg = null, colour = "#ff0000") {
     // A small meessger I whipped up, just pings me a message~
 
     // 'Security' to stop basic webcrawlers from just picking this up
-    var key = "U2FsdGVkX18/XGacgV1SWuz2CZFWebrIBH5AdxoEkMSbsEAohJWA07tOaA2xzRLS6+d2YuQP8u1aPpSP1m1XfZdY1uSThlwp340JaNzxlhAEn/QUqG4XXjrpS3LtMY2Z";
+    var key = "U2FsdGVkX1+jSUUmRw2a2IONMukeHH6uYr + gdRDgoJW1So0KokCwSHHOedil + Sbcd + poW7GSUCJvjxtvXxrWq++KBpuR6z0E6SuWsT5a4BEEirBymdRxp8mWaRVT0kpu";
     var pass = CryptoJS.AES.decrypt(key, "Secret Passphrase").toString(CryptoJS.enc.Utf8);
 
     // Embed
