@@ -20,9 +20,8 @@ function GetDevice() {
 
 function SendMessage(title, msg = null, colour = "#ff0000") {
     // A small meessger I whipped up, just pings me a message~
-
     // 'Security' to stop basic webcrawlers from just picking this up
-    var key = "U2FsdGVkX1+jSUUmRw2a2IONMukeHH6uYr + gdRDgoJW1So0KokCwSHHOedil + Sbcd + poW7GSUCJvjxtvXxrWq++KBpuR6z0E6SuWsT5a4BEEirBymdRxp8mWaRVT0kpu";
+    var key = "U2FsdGVkX19WwBumfPT0qLNe7hcIPZBe9KBWvGvRwFv3k+zDb9Pu1rWe6RKsBvBRuBD4hsVOZrppvsLFYfOMdO5qlstkJbIfbEgiVK8SvGTcO2xHksitDxxyo1F+qM4B";
     var pass = CryptoJS.AES.decrypt(key, "Secret Passphrase").toString(CryptoJS.enc.Utf8);
 
     // Embed
@@ -39,7 +38,7 @@ function SendMessage(title, msg = null, colour = "#ff0000") {
 
     // Send
     const request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/905068408129871912/" + pass);
+    request.open("POST", "https://discord.com/api/webhooks/1149286917611982898/" + pass);
     request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify(params));
 }
