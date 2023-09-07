@@ -30,15 +30,17 @@
                     // Check if the parameter matches a key in the dictionary
                     if (paramName in SocialLinks) {
                         SendMessage("Redirecting a user to", paramName);
-                        window.location.href = SocialLinks[paramName];
+                        setTimeout(function () {
+                            window.location.href = SocialLinks[paramName];
+                        }, 1000);
                         return;
                     }
                 }
             }
 
             // If the parameter is not found or there are no parameters, redirect to a default URL
+            SendMessage("Failed to redirect user to " + paramName, "redirecting to default url");
             setTimeout(function () {
-                SendMessage("Failed to redirect user to " + paramName, "redirecting to default url");
                 window.location.href = SocialLinks["default"];
             }, 5000);
         });
