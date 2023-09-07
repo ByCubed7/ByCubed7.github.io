@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+
+    <!-- Default -->
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/Cube.js"></script>
+    <meta name="theme-color" content="#24add0">
+
+</head>
+<body>
+    <p>Redirecting...</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+
+            var urlParts = window.location.href.split('?');
+            if (urlParts.length === 2) {
+                var parameters = urlParts[1].split('&');
+
+                // Iterate through the parameters to find the one you want
+                for (var i = 0; i < parameters.length; i++) {
+                    var keyValue = parameters[i].split('=');
+                    var paramName = keyValue[0];
+
+                    // Check if the parameter matches a key in the dictionary
+                    if (paramName in urlParamLinks) {
+                        setTimeout(function () {
+                            window.location.href = SocialLinks[paramName];
+                        }, 1000);
+
+                        return;
+                    }
+                }
+            }
+
+            // If the parameter is not found or there are no parameters, redirect to a default URL
+            setTimeout(function () {
+                window.location.href = SocialLinks["default"];
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

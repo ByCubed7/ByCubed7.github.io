@@ -121,6 +121,23 @@ window.onload = (event) => {
     });
 };
 
+
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// Social links
+
+// Dictionary mapping URL parameters to their corresponding links
+const SocialLinks = {
+    'default': 'https://bycubed7.github.io/',
+    'discord': 'https://discord.com/invite/rxDnQypywg',
+    'twitter': 'https://twitter.com/ByCubed7',
+    'github' : 'https://github.com/ByCubed7',
+    'itchio': 'https://bycubed7.itch.io/',
+    'artstation': 'https://www.artstation.com/ByCubed7',
+};
+
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 // Ready each code display correctly and highlightjs them
 document.addEventListener('DOMContentLoaded', (event) => {
 
